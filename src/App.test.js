@@ -45,7 +45,6 @@ describe('Search', () => {
 describe('Button', () => {
   const props = {
   	onClick: () => {},
-  	className: 'fud',
   };
 
   it('renders without crashing', () => {
@@ -71,6 +70,8 @@ describe('Table', () => {
   	  { title: '2', author: '2', num_comments: 1, points: 2,
   	    objectID: 'z'},
   	],
+  	sortKey: 'TITLE',
+  	isSortReverse: false,
   	onDismiss: () => {},
   };
 
