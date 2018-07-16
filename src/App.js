@@ -22,6 +22,7 @@ const SORTS = {
   POINTS: list => sortBy(list, 'points').reverse(),
 }
 
+/* Moved this outside App component */
 const updateSearchTopStoriesState = (hits, page) =>
     (prevState) => {
       const {searchKey, results } = prevState;
